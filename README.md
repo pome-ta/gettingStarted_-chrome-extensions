@@ -111,6 +111,25 @@ chrome.runtime.onInstalled.addListener(() => {
 
 ### Add the storage permission | ストレージ権限を追加します
 
+[storage](https://developer.chrome.com/docs/extensions/reference/storage/)APIを含むほとんどのAPIは、拡張機能がそれらを使用するために、マニフェストの「`permissions`」フィールドに登録する必要があります。
+
+
+``` manifest.json
+{
+  "name": "Getting Started Example",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"]
+}
+```
+
+
+### Inspect the background script | バックグラウンドスクリプトを検査します
+
 
 拡張機能管理ページに戻り、[再読み込み]リンクをクリックします。 新しいフィールドである[ビューの検査]が、青いリンクのサービスワーカーで利用できるようになります。
 
