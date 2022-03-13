@@ -81,9 +81,9 @@ Ta-da! 拡張機能は正常にインストールされました。 マニフェ
   "description": "Build an Extension!",
   "version": "1.0",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
-  }
++  "background": {
++    "service_worker": "background.js"
++  }
 }
 ```
 
