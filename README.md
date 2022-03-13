@@ -81,9 +81,10 @@ Ta-da! 拡張機能は正常にインストールされました。 マニフェ
   "description": "Build an Extension!",
   "version": "1.0",
   "manifest_version": 3,
-+  "background": {
-+    "service_worker": "background.js"
-+  }
++ "background": {
++   "service_worker": "background.js"
++ }
+
 }
 ```
 
@@ -123,7 +124,7 @@ chrome.runtime.onInstalled.addListener(() => {
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage"]
++ "permissions": ["storage"]
 }
 ```
 
@@ -169,9 +170,10 @@ chrome.runtime.onInstalled.addListener(() => {
     "service_worker": "background.js"
   },
   "permissions": ["storage"],
-  "action": {
-    "default_popup": "popup.html"
-  }
++ "action": {
++   "default_popup": "popup.html"
++ }
+
 }
 ```
 
@@ -214,12 +216,12 @@ button.current {
   "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": {
-      "16": "/images/get_started16.png",
-      "32": "/images/get_started32.png",
-      "48": "/images/get_started48.png",
-      "128": "/images/get_started128.png"
-    }
++   "default_icon": {
++     "16": "/images/get_started16.png",
++     "32": "/images/get_started32.png",
++     "48": "/images/get_started48.png",
++     "128": "/images/get_started128.png"
++   }
   }
 }
 ```
@@ -248,12 +250,12 @@ button.current {
       "128": "/images/get_started128.png"
     }
   },
-  "icons": {
-    "16": "/images/get_started16.png",
-    "32": "/images/get_started32.png",
-    "48": "/images/get_started48.png",
-    "128": "/images/get_started128.png"
-  }
++ "icons": {
++   "16": "/images/get_started16.png",
++   "32": "/images/get_started32.png",
++   "48": "/images/get_started48.png",
++   "128": "/images/get_started128.png"
++ }
 }
 ```
 
@@ -288,7 +290,7 @@ chrome.storage.sync.get("color", ({ color }) => {
   </head>
   <body>
     <button id="changeColor"></button>
-    <script src="popup.js"></script>
++   <script src="popup.js"></script>
   </body>
 </html>
 ```
